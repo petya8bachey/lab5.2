@@ -49,4 +49,20 @@ public class DataBase {
             element.collision(company);
         }
     }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("[");
+        for (int i = 0; i < dataBase.size(); i++) {
+            CompanyAddress companyAddress = dataBase.get(i);
+            if (companyAddress != null) {
+                builder.append("[");
+                builder.append(companyAddress);
+                builder.append("]\n");
+            }
+        }
+        builder.append("]");
+        return builder.toString();
+    }
 }

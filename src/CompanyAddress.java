@@ -65,4 +65,16 @@ public class CompanyAddress {
         }
         return result;
     }
+
+    @Override
+    public String toString() {
+        String result = country  + " " + city + " " + street + " " + house + " ";
+        if (left != null) {
+            result += left.toString();
+        }
+        if (right != null) {
+            result += right.toString();
+        }
+        return result;
+    }
 }

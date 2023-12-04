@@ -12,8 +12,8 @@ public class Main {
             a.house = i;
             x.add(a);
         }
-        System.out.println(x.dataBase);
+        System.out.println(x);
         x.resize(16);
-        System.out.println(x.dataBase);
+        System.out.println(x);
     }
 }
